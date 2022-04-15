@@ -52,7 +52,7 @@
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Component id="pMenu" max="32767" attributes="0"/>
+              <Component id="pMenu" pref="700" max="32767" attributes="0"/>
               <Component id="pNoiDung" alignment="0" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
@@ -308,6 +308,7 @@
                       <Image iconType="3" name="/hinhanh/logout_32px.png"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="&#x110;&#x103;ng xu&#x1ea5;t"/>
+                    <Property name="toolTipText" type="java.lang.String" value="ALT + F4"/>
                   </Properties>
                 </Component>
               </SubComponents>
@@ -405,19 +406,19 @@
         <Container class="javax.swing.JPanel" name="pNoiDung">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="66" green="66" red="0" type="rgb"/>
+              <Color blue="cc" green="cc" red="ff" type="rgb"/>
             </Property>
           </Properties>
 
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="1037" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="1034" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="688" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="700" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>

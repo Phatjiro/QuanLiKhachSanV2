@@ -162,6 +162,7 @@ public class GDChinh extends javax.swing.JFrame {
         lblDangXuat.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         lblDangXuat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hinhanh/logout_32px.png"))); // NOI18N
         lblDangXuat.setText("Đăng xuất");
+        lblDangXuat.setToolTipText("ALT + F4");
 
         javax.swing.GroupLayout pDangXuatLayout = new javax.swing.GroupLayout(pDangXuat);
         pDangXuat.setLayout(pDangXuatLayout);
@@ -249,17 +250,17 @@ public class GDChinh extends javax.swing.JFrame {
                 .addComponent(pDangXuat, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        pNoiDung.setBackground(new java.awt.Color(0, 102, 102));
+        pNoiDung.setBackground(new java.awt.Color(255, 204, 204));
 
         javax.swing.GroupLayout pNoiDungLayout = new javax.swing.GroupLayout(pNoiDung);
         pNoiDung.setLayout(pNoiDungLayout);
         pNoiDungLayout.setHorizontalGroup(
             pNoiDungLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1037, Short.MAX_VALUE)
+            .addGap(0, 1034, Short.MAX_VALUE)
         );
         pNoiDungLayout.setVerticalGroup(
             pNoiDungLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 688, Short.MAX_VALUE)
+            .addGap(0, 700, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout pChinhLayout = new javax.swing.GroupLayout(pChinh);
@@ -273,7 +274,7 @@ public class GDChinh extends javax.swing.JFrame {
         );
         pChinhLayout.setVerticalGroup(
             pChinhLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(pMenu, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(pMenu, javax.swing.GroupLayout.DEFAULT_SIZE, 700, Short.MAX_VALUE)
             .addComponent(pNoiDung, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
