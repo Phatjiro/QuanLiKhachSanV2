@@ -72,7 +72,7 @@ public class PanelQLPhong extends javax.swing.JPanel {
         jButton1 = new javax.swing.JButton();
         pMoHinhPhong = new javax.swing.JPanel();
 
-        setPreferredSize(new java.awt.Dimension(1040, 700));
+        setPreferredSize(new java.awt.Dimension(1040, 740));
 
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hinhanh/user_48px.png"))); // NOI18N
@@ -297,6 +297,7 @@ public class PanelQLPhong extends javax.swing.JPanel {
 
         jButton1.setBackground(new java.awt.Color(15, 184, 169));
         jButton1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hinhanh/plus_24px.png"))); // NOI18N
         jButton1.setText("Thêm phòng");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -350,7 +351,7 @@ public class PanelQLPhong extends javax.swing.JPanel {
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 669, Short.MAX_VALUE)
+            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 629, Short.MAX_VALUE)
             .addComponent(jPanel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 

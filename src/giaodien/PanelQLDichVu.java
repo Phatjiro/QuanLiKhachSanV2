@@ -27,6 +27,8 @@ public class PanelQLDichVu extends javax.swing.JPanel {
         jLabel1 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
 
+        setPreferredSize(new java.awt.Dimension(1040, 740));
+
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hinhanh/user_48px.png"))); // NOI18N
         jLabel3.setToolTipText("Thông tin tài khoản");

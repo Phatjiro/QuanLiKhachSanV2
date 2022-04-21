@@ -4,7 +4,7 @@
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
     <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-      <Dimension value="[1420, 840]"/>
+      <Dimension value="[1340, 740]"/>
     </Property>
   </Properties>
   <SyntheticProperties>
@@ -143,7 +143,12 @@
                       <Image iconType="3" name="/hinhanh/Logo_small.jpg"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="VinaHotel"/>
+                    <Property name="toolTipText" type="java.lang.String" value="Thu ph&#xf3;ng menu"/>
+                    <Property name="iconTextGap" type="int" value="8"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblTieuDeMouseClicked"/>
+                  </Events>
                 </Component>
               </SubComponents>
             </Container>
@@ -180,6 +185,8 @@
                       <Image iconType="3" name="/hinhanh/houses_32px.png"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="QL ph&#xf2;ng"/>
+                    <Property name="toolTipText" type="java.lang.String" value="Qu&#x1ea3;n l&#xed; ph&#xf2;ng"/>
+                    <Property name="iconTextGap" type="int" value="24"/>
                   </Properties>
                 </Component>
               </SubComponents>
@@ -217,6 +224,7 @@
                       <Image iconType="3" name="/hinhanh/service_32px.png"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="QL d&#x1ecb;ch v&#x1ee5;"/>
+                    <Property name="toolTipText" type="java.lang.String" value="Qu&#x1ea3;n l&#xed; d&#x1ecb;ch v&#x1ee5;"/>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                         <MatteColorBorder bottom="2" left="0" right="0" top="0">
@@ -224,6 +232,7 @@
                         </MatteColorBorder>
                       </Border>
                     </Property>
+                    <Property name="iconTextGap" type="int" value="24"/>
                   </Properties>
                 </Component>
               </SubComponents>
@@ -264,6 +273,7 @@
                       <Image iconType="3" name="/hinhanh/customer_32px.png"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="QL kh&#xe1;ch h&#xe0;ng"/>
+                    <Property name="toolTipText" type="java.lang.String" value="Qu&#x1ea3;n l&#xed; kh&#xe1;ch h&#xe0;ng"/>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                         <MatteColorBorder bottom="2" left="0" right="0" top="0">
@@ -271,6 +281,7 @@
                         </MatteColorBorder>
                       </Border>
                     </Property>
+                    <Property name="iconTextGap" type="int" value="24"/>
                   </Properties>
                 </Component>
               </SubComponents>
@@ -312,6 +323,7 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="&#x110;&#x103;ng xu&#x1ea5;t"/>
                     <Property name="toolTipText" type="java.lang.String" value="ALT + F4"/>
+                    <Property name="iconTextGap" type="int" value="24"/>
                   </Properties>
                 </Component>
               </SubComponents>
@@ -349,6 +361,7 @@
                       <Image iconType="3" name="/hinhanh/employee_32px.png"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="QL nh&#xe2;n vi&#xea;n"/>
+                    <Property name="toolTipText" type="java.lang.String" value="Qu&#x1ea3;n l&#xed; nh&#xe2;n vi&#xea;n"/>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                         <MatteColorBorder bottom="2" left="0" right="0" top="0">
@@ -356,6 +369,7 @@
                         </MatteColorBorder>
                       </Border>
                     </Property>
+                    <Property name="iconTextGap" type="int" value="24"/>
                   </Properties>
                 </Component>
               </SubComponents>
@@ -393,6 +407,7 @@
                       <Image iconType="3" name="/hinhanh/payment_32px.png"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="QL thu chi"/>
+                    <Property name="toolTipText" type="java.lang.String" value="Qu&#x1ea3;n l&#xed; thu chi"/>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                         <MatteColorBorder bottom="2" left="0" right="0" top="0">
@@ -400,6 +415,7 @@
                         </MatteColorBorder>
                       </Border>
                     </Property>
+                    <Property name="iconTextGap" type="int" value="24"/>
                   </Properties>
                 </Component>
               </SubComponents>
@@ -416,7 +432,7 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="1074" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="1134" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">

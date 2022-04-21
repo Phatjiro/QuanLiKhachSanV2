@@ -36,6 +36,8 @@ public class PanelQLKhachHang extends javax.swing.JPanel {
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hinhanh/book_32px.png"))); // NOI18N
         jLabel4.setToolTipText("Hướng dẫn sử dụng");
 
+        setPreferredSize(new java.awt.Dimension(1040, 740));
+
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hinhanh/user_48px.png"))); // NOI18N
         jLabel1.setToolTipText("Thông tin tài khoản");

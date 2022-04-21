@@ -1,5 +1,6 @@
 package giaodien;
 
+import java.awt.Dimension;
 import java.awt.Toolkit;
 import java.util.ArrayList;
 import java.util.List;
@@ -12,6 +13,8 @@ import xuli.DanhMucBean;
  */
 public class GDChinh extends javax.swing.JFrame {
 
+    private boolean isThuGonMenu = false;
+    
     /**
      * Creates new form GDChinh
      */
@@ -65,7 +68,7 @@ public class GDChinh extends javax.swing.JFrame {
         pNoiDung = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1420, 840));
+        setPreferredSize(new java.awt.Dimension(1340, 740));
 
         pChinh.setBackground(new java.awt.Color(243, 246, 249));
 
@@ -79,6 +82,13 @@ public class GDChinh extends javax.swing.JFrame {
         lblTieuDe.setForeground(new java.awt.Color(204, 0, 51));
         lblTieuDe.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hinhanh/Logo_small.jpg"))); // NOI18N
         lblTieuDe.setText("VinaHotel");
+        lblTieuDe.setToolTipText("Thu phóng menu");
+        lblTieuDe.setIconTextGap(8);
+        lblTieuDe.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblTieuDeMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout pTieuDeLayout = new javax.swing.GroupLayout(pTieuDe);
         pTieuDe.setLayout(pTieuDeLayout);
@@ -99,6 +109,8 @@ public class GDChinh extends javax.swing.JFrame {
         lblQLPhong.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         lblQLPhong.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hinhanh/houses_32px.png"))); // NOI18N
         lblQLPhong.setText("QL phòng");
+        lblQLPhong.setToolTipText("Quản lí phòng");
+        lblQLPhong.setIconTextGap(24);
 
         javax.swing.GroupLayout pQLPhongLayout = new javax.swing.GroupLayout(pQLPhong);
         pQLPhong.setLayout(pQLPhongLayout);
@@ -119,7 +131,9 @@ public class GDChinh extends javax.swing.JFrame {
         lblQLDichVu.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         lblQLDichVu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hinhanh/service_32px.png"))); // NOI18N
         lblQLDichVu.setText("QL dịch vụ");
+        lblQLDichVu.setToolTipText("Quản lí dịch vụ");
         lblQLDichVu.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(255, 153, 102)));
+        lblQLDichVu.setIconTextGap(24);
 
         javax.swing.GroupLayout pQLDichVuLayout = new javax.swing.GroupLayout(pQLDichVu);
         pQLDichVu.setLayout(pQLDichVuLayout);
@@ -141,7 +155,9 @@ public class GDChinh extends javax.swing.JFrame {
         lblQLKhachHang.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         lblQLKhachHang.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hinhanh/customer_32px.png"))); // NOI18N
         lblQLKhachHang.setText("QL khách hàng");
+        lblQLKhachHang.setToolTipText("Quản lí khách hàng");
         lblQLKhachHang.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(255, 153, 102)));
+        lblQLKhachHang.setIconTextGap(24);
 
         javax.swing.GroupLayout pQLKhachHangLayout = new javax.swing.GroupLayout(pQLKhachHang);
         pQLKhachHang.setLayout(pQLKhachHangLayout);
@@ -164,6 +180,7 @@ public class GDChinh extends javax.swing.JFrame {
         lblDangXuat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hinhanh/logout_32px.png"))); // NOI18N
         lblDangXuat.setText("Đăng xuất");
         lblDangXuat.setToolTipText("ALT + F4");
+        lblDangXuat.setIconTextGap(24);
 
         javax.swing.GroupLayout pDangXuatLayout = new javax.swing.GroupLayout(pDangXuat);
         pDangXuat.setLayout(pDangXuatLayout);
@@ -184,7 +201,9 @@ public class GDChinh extends javax.swing.JFrame {
         lblQLNhanVien.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         lblQLNhanVien.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hinhanh/employee_32px.png"))); // NOI18N
         lblQLNhanVien.setText("QL nhân viên");
+        lblQLNhanVien.setToolTipText("Quản lí nhân viên");
         lblQLNhanVien.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(255, 153, 102)));
+        lblQLNhanVien.setIconTextGap(24);
 
         javax.swing.GroupLayout pQLNhanVienLayout = new javax.swing.GroupLayout(pQLNhanVien);
         pQLNhanVien.setLayout(pQLNhanVienLayout);
@@ -205,7 +224,9 @@ public class GDChinh extends javax.swing.JFrame {
         lblQLThuChi.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         lblQLThuChi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hinhanh/payment_32px.png"))); // NOI18N
         lblQLThuChi.setText("QL thu chi");
+        lblQLThuChi.setToolTipText("Quản lí thu chi");
         lblQLThuChi.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(255, 153, 102)));
+        lblQLThuChi.setIconTextGap(24);
 
         javax.swing.GroupLayout pQLThuChiLayout = new javax.swing.GroupLayout(pQLThuChi);
         pQLThuChi.setLayout(pQLThuChiLayout);
@@ -257,7 +278,7 @@ public class GDChinh extends javax.swing.JFrame {
         pNoiDung.setLayout(pNoiDungLayout);
         pNoiDungLayout.setHorizontalGroup(
             pNoiDungLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1074, Short.MAX_VALUE)
+            .addGap(0, 1134, Short.MAX_VALUE)
         );
         pNoiDungLayout.setVerticalGroup(
             pNoiDungLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -292,6 +313,20 @@ public class GDChinh extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void lblTieuDeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblTieuDeMouseClicked
+        if (isThuGonMenu == false) {
+            pMenu.setPreferredSize(new Dimension(68,688));
+            pMenu.revalidate();
+            pMenu.repaint();
+            isThuGonMenu = true;
+        } else {
+            pMenu.setPreferredSize(new Dimension(200,688));
+            pMenu.revalidate();
+            pMenu.repaint();
+            isThuGonMenu = false;
+        }
+    }//GEN-LAST:event_lblTieuDeMouseClicked
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel lblDangXuat;
