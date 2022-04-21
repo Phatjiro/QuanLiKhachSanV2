@@ -65,6 +65,7 @@ public class GDChinh extends javax.swing.JFrame {
         pNoiDung = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(1420, 840));
 
         pChinh.setBackground(new java.awt.Color(243, 246, 249));
 
@@ -256,11 +257,11 @@ public class GDChinh extends javax.swing.JFrame {
         pNoiDung.setLayout(pNoiDungLayout);
         pNoiDungLayout.setHorizontalGroup(
             pNoiDungLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1034, Short.MAX_VALUE)
+            .addGap(0, 1074, Short.MAX_VALUE)
         );
         pNoiDungLayout.setVerticalGroup(
             pNoiDungLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 700, Short.MAX_VALUE)
+            .addGap(0, 740, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout pChinhLayout = new javax.swing.GroupLayout(pChinh);
@@ -274,7 +275,7 @@ public class GDChinh extends javax.swing.JFrame {
         );
         pChinhLayout.setVerticalGroup(
             pChinhLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(pMenu, javax.swing.GroupLayout.DEFAULT_SIZE, 700, Short.MAX_VALUE)
+            .addComponent(pMenu, javax.swing.GroupLayout.DEFAULT_SIZE, 740, Short.MAX_VALUE)
             .addComponent(pNoiDung, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
