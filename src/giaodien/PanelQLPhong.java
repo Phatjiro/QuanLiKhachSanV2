@@ -29,6 +29,8 @@ public class PanelQLPhong extends javax.swing.JPanel {
         btnGroupTrangThai.add(rbtnPhongDatTruoc);
         btnGroupTrangThai.add(jRadioButton5);
         
+        // Tăng speed thanh cuộn
+        jScrollPane1.getVerticalScrollBar().setUnitIncrement(16);
     }
 
     /**
@@ -70,7 +72,8 @@ public class PanelQLPhong extends javax.swing.JPanel {
         jPanel11 = new javax.swing.JPanel();
         tfTimKiem = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
-        pMoHinhPhong = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        pMoHinh1 = new custom.pMoHinh();
 
         setPreferredSize(new java.awt.Dimension(1040, 740));
 
@@ -312,7 +315,7 @@ public class PanelQLPhong extends javax.swing.JPanel {
             jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel11Layout.createSequentialGroup()
                 .addComponent(tfTimKiem, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 454, Short.MAX_VALUE)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         jPanel11Layout.setVerticalGroup(
@@ -322,22 +325,23 @@ public class PanelQLPhong extends javax.swing.JPanel {
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        pMoHinhPhong.setBackground(new java.awt.Color(255, 255, 255));
-        pMoHinhPhong.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
+        jScrollPane1.setBorder(null);
+        jScrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        jScrollPane1.setViewportView(pMoHinh1);
 
         javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
         jPanel10.setLayout(jPanel10Layout);
         jPanel10Layout.setHorizontalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(pMoHinhPhong, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jScrollPane1)
         );
         jPanel10Layout.setVerticalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel10Layout.createSequentialGroup()
                 .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(pMoHinhPhong, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jScrollPane1))
         );
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -351,7 +355,7 @@ public class PanelQLPhong extends javax.swing.JPanel {
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 629, Short.MAX_VALUE)
+            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 669, Short.MAX_VALUE)
             .addComponent(jPanel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
@@ -398,9 +402,9 @@ public class PanelQLPhong extends javax.swing.JPanel {
     }//GEN-LAST:event_tfTimKiemMouseClicked
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        pMoHinhPhong.add(new CustomJpanelMoHinhPhong(BienMacDinh.mauNenMenu));
-        pMoHinhPhong.validate();
-        pMoHinhPhong.repaint();
+        pMoHinh1.add(new CustomJpanelMoHinhPhong(BienMacDinh.mauNenMenu));
+        pMoHinh1.validate();
+        pMoHinh1.repaint();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -424,7 +428,8 @@ public class PanelQLPhong extends javax.swing.JPanel {
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
     private javax.swing.JRadioButton jRadioButton5;
-    private javax.swing.JPanel pMoHinhPhong;
+    private javax.swing.JScrollPane jScrollPane1;
+    private custom.pMoHinh pMoHinh1;
     private javax.swing.JRadioButton rbtnDeluxe;
     private javax.swing.JRadioButton rbtnPhongCoNguoi;
     private javax.swing.JRadioButton rbtnPhongDatTruoc;
